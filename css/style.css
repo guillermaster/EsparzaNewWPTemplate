@@ -1,0 +1,9 @@
+body {
+	background: black;
+}
+
+#page-wrap, .container {
+	width: 1024px;
+	margin: 0 auto;
+	background: #C0C0C0;
+}
