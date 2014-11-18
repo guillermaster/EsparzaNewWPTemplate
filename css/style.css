@@ -1,9 +1,87 @@
-body {
+html,body {
 	background: black;
+	height: 100%;
+	background: url(../img/background.png) repeat;
+    /* The html and body elements cannot have any padding or margin, otherwise the footer wont stick at the bottom of the window */
 }
 
 #page-wrap, .container {
-	width: 1024px;
 	margin: 0 auto;
-	background: #C0C0C0;
+    max-width: 1366px;
+	background: #000;
+	padding: 0 15px;
+}
+
+.container > hr {
+    margin: 0 0 60px;
+    border-color: #0f1f71;
+    border-width: 5px;
+}
+
+.hero-unit{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+@media screen and (max-width:400px) {
+	@-ms-viewport{
+		width:320px;
+	}
+}
+
+.footer .container {
+    margin: 0 auto;
+    height: 100px;
+    max-width: 1366px;
+	padding: 15px;
+    background-color: #0f1f71;
+    color: #fff;
+}
+
+.top-header .container {
+    margin: 0 auto;
+    height: 40px;
+    max-width: 1366px;
+	padding: 15px;
+    background-color: #0f1f71;
+    color: #fff;
+}
+
+/* Wrapper for page content to push down footer */
+/*      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+       /* margin: 0 auto -60px;
+      }*/
+
+      /* Set the fixed height of the footer here */
+      
+      
+/* Main marketing message and sign up button */
+.jumbotron {
+	border-top: 5px solid #666666;
+	border-bottom: 5px solid #666666;
+	margin: 10px 5px;
+	text-align: center;
+	height: 373px;
+}
+.jumbotron h1 {
+	font-size: 70px;
+	line-height: 1;
+}
+.jumbotron .lead {
+	font-size: 24px;
+	line-height: 1.25;
+}
+.jumbotron .btn {
+	font-size: 21px;
+	padding: 14px 24px;
+}
+.contact-home{
+	border-top: 5px solid #666666;
+	border-bottom: 5px solid #666666;
+	height: 373px;
+	margin: 10px 5px;
 }
