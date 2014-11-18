@@ -8,8 +8,12 @@ html,body {
 #page-wrap, .container {
 	margin: 0 auto;
     max-width: 1366px;
-	background: #000;
+	background: #1a1a1a;
 	padding: 0 15px;
+}
+
+.masthead {
+	color: #ffffff;
 }
 
 .container > hr {
@@ -33,19 +37,42 @@ html,body {
     margin: 0 auto;
     height: 100px;
     max-width: 1366px;
-	padding: 15px;
+	padding: 20px;
     background-color: #0f1f71;
     color: #fff;
 }
 
 .top-header .container {
     margin: 0 auto;
-    height: 40px;
     max-width: 1366px;
-	padding: 15px;
+	padding: 5px 15px;
     background-color: #0f1f71;
-    color: #fff;
 }
+
+.top-header .container span {
+	color: #fff;
+    font-size: 0.7em;
+    text-transform: uppercase;
+}
+
+.masthead .container{
+	padding: 20px 10px;	
+}
+
+.masthead-contactinfo{
+	font-size: 1.2em;
+}
+
+.masthead-contactinfo li{
+	background: url(../img/ico-map-marker.png) no-repeat;
+	padding-left: 40px;
+}
+
+.masthead-contactinfo li:nth-child(2)  {
+	background: url(../img/ico-phone.png) no-repeat;
+	padding-left: 40px;
+}
+
 
 /* Wrapper for page content to push down footer */
 /*      #wrap {
@@ -98,4 +125,13 @@ html,body {
 .contact-home blockquote {
 	font-size: 1.2em;
 	margin: 5px;
+}
+
+/* MAIN CONTENT */
+.main-content{
+	-webkit-border-radius: 5px|;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+	background: #eeeeee;
+	padding: 20px;
 }
