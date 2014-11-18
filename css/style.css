@@ -92,9 +92,10 @@ html,body {
 	height: 373px;
 	margin: 10px 5px;
 	background-color: #eeeeee;
-	padding: 0 10px;
+	padding: 0 10px 0 24px;
 }
 
 .contact-home blockquote {
 	font-size: 1.2em;
+	margin: 5px;
 }
