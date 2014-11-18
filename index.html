@@ -21,20 +21,31 @@
 		<div class="container">
 			<div class="masthead">
 		        <h3 class="muted">Esparza PC</h3>
-		        <div class="navbar">
-		        	<div class="navbar-inner">
-		         		<div class="container">
-		        			<ul class="nav">
-				                <li class="active"><a href="#">Home</a></li>
-				                <li><a href="#">Termite control</a></li>
-								<li><a href="#">Pest control</a></li>
-								<li><a href="#">Residential</a></li>
-								<li><a href="#">Commercial</a></li>
-								<li><a href="#">Articles</a></li>
-		              		</ul>
-		            	</div>
-		          	</div>
-		        </div><!-- /.navbar -->
+		        <nav class="navbar navbar-default" role="navigation">
+				  <div class="container-fluid">
+				    <!-- Brand and toggle get grouped for better mobile display -->
+				    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+				    </div>
+
+				    <!-- Collect the nav links, forms, and other content for toggling -->
+				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				      <ul class="nav navbar-nav navbar-right">
+				        <li class="active"><a href="#">Home</a></li>
+				        <li><a href="#">Termite control</a></li>
+						<li><a href="#">Pest control</a></li>
+						<li><a href="#">Residential</a></li>
+						<li><a href="#">Commercial</a></li>
+						<li><a href="#">Articles</a></li>
+				      </ul>
+				    </div><!-- /.navbar-collapse -->
+				  </div><!-- /.container-fluid -->
+				</nav>
 		    </div><!-- /.masthead -->
 		    <!-- Jumbotron -->
 		    <div class="row-fluid" style="margin-bottom: 0">
@@ -48,6 +59,63 @@
 			    <div class="span4">
 			    	<form class="contact-home">
 			    		<h2>Schedule service now</h2>
+			    		<blockquote>For your convenience and immediate attention fill out the form below</blockquote>
+			    		<div class="row" style="margin-bottom: 5px;">
+				            <div class="col-xs-6">
+				                <div class="input-group">
+				                    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+				                    <input type="text" class="form-control" placeholder="Name">
+				                </div>
+				            </div>
+				            <div class="col-xs-6">
+				                <select class="form-control">
+				                    <option>Type of request</option>
+				                </select>
+				            </div>
+				        </div>
+				        <div class="row" style="margin-bottom: 5px;">
+				            <div class="col-xs-6">
+				      			<div class="input-group">
+				                  <label class="sr-only" for="exampleInputEmail2">Email address</label>
+				                  <div class="input-group-addon">@</div>
+				                  <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+				                </div>
+				                </div>
+				            <div class="col-xs-6">
+				                <select class="form-control">
+				                    <option>Desired service</option>
+				                </select>
+				            </div>
+				        </div>
+				        <div class="row" style="margin-bottom: 5px;">
+				            <div class="col-xs-6">
+				                <div class="input-group">
+				                    <span class="input-group-addon"><span class="glyphicon glyphicon-screenshot"></span></span>
+				                    <input type="text" class="form-control" placeholder="Address">
+				                </div>
+				            </div>
+				            <div class="col-xs-6">
+				                <div class="input-group">
+				                    <span class="input-group-addon"><span class="glyphicon glyphicon-earphone"></span></span>
+				                    <input type="text" class="form-control" placeholder="Phone number">
+				                </div>
+				            </div>
+				        </div>
+				        <div class="row" style="margin-bottom: 5px;">
+				            <div class="col-xs-6">
+				                <div class="input-group">
+				                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+				                    <input type="text" class="form-control" placeholder="Desired appointment date">
+				                </div>
+				            </div>
+				            <div class="col-xs-6">
+				                <div class="input-group">
+				                    <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
+				                    <input type="text" class="form-control" placeholder="Desired appointment time">
+				                </div>
+				            </div>
+				        </div>
+				        <p><a href="#" class="btn btn-primary btn-large">Get started &raquo;</a></p>
 			    	</form>
 			    </div>
 			</div>
