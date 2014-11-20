@@ -1,5 +1,4 @@
 html,body {
-	background: black;
 	height: 100%;
 	background: url(../img/background.png) repeat;
     /* The html and body elements cannot have any padding or margin, otherwise the footer wont stick at the bottom of the window */
@@ -135,3 +134,50 @@ html,body {
 	background: #eeeeee;
 	padding: 20px;
 }
+
+.inner-content h1{
+	width: 110%;
+	background: #1a1a1a;
+	color: #ffff00;
+	padding: 10px 20px;
+	margin: 5px -20px 20px -20px;
+}
+
+.inner-content h3{
+	background: #0f1f71 url(../img/h3-bg-bullet.png) no-repeat 19px 5px;
+	margin: 5px -20px;
+	padding: 5px 20px 5px 50px;
+	-webkit-border-radius: 0 15px 15px 0;
+    -moz-border-radius: 0 15px 15px 0;
+    border-radius: 0 15px 15px 0;
+	width: 260px;
+	color: #fffd3b;
+	font-size: 1.3em;
+}
+
+.side-bible-quote {
+}
+
+.side-bible-quote blockquote {
+	background: #0f1f71;
+	color: #fffd3b;
+	font-size: 1.1em;
+	quotes: "\201C""\201D""\2018""\2019";
+}
+
+.side-bible-quote blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+.side-bible-quote blockquote p {
+  display: inline;
+}
+
+.side-bible-quote small{
+	color: #ffffff;
+}
+
