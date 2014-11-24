@@ -24,9 +24,8 @@
 		   ?>
 		</title>
 		<!-- Bootstrap -->
-    	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-		<link href="css/bootstrap-responsive.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
+    	<link href="<?php bloginfo('stylesheet_directory'); ?>/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="<?php bloginfo('stylesheet_directory'); ?>/css/bootstrap-responsive.css" rel="stylesheet">
 		<link rel="shortcut icon" href="/favicon.ico">	
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
@@ -44,7 +43,7 @@
       	<div class="masthead">
 	      	<div class="container">
 	        	<div class="navbar-header">
-	          		<img src="img/main-logo-esparza.png" alt="Esparza Pest Control" title="Esparza Pest Control" />
+	          		<img src="<?php bloginfo('stylesheet_directory'); ?>/img/main-logo-esparza.png" alt="Esparza Pest Control" title="Esparza Pest Control" />
 	        	</div>
 	        	<div class="pull-right">
 	          		<ul class="list-inline masthead-contactinfo">
@@ -74,16 +73,19 @@
 				    </div>
 
 				    <!-- Collect the nav links, forms, and other content for toggling -->
-				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				      <ul class="nav navbar-nav navbar-right">
-				        <li class="active"><a href="#">Home</a></li>
-				        <li><a href="#">Termite control</a></li>
-						<li><a href="#">Pest control</a></li>
-						<li><a href="#">Residential</a></li>
-						<li><a href="#">Commercial</a></li>
-						<li><a href="#">Articles</a></li>
-				      </ul>
-				    </div><!-- /.navbar-collapse -->
+				    <?php
+
+					$menu_pars = array(
+						'menu'            => '',
+						'container'       => 'div',
+						'container_class' => 'collapse navbar-collapse',
+						'container_id'    => 'bs-example-navbar-collapse-1',
+						'menu_class'      => 'nav navbar-nav navbar-right'
+					);
+
+					wp_nav_menu( $menu_pars );
+
+					?>
 				  </div><!-- /.container-fluid -->
 				</nav>
 		    <!-- Jumbotron -->
