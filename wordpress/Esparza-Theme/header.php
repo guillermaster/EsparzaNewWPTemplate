@@ -26,9 +26,12 @@
 		<!-- Bootstrap -->
     	<link href="<?php bloginfo('stylesheet_directory'); ?>/css/bootstrap.min.css" rel="stylesheet" media="screen">
 		<link href="<?php bloginfo('stylesheet_directory'); ?>/css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="<?php bloginfo('stylesheet_directory'); ?>/css/timeline.css" rel="stylesheet">
+		<link href="<?php bloginfo('stylesheet_directory'); ?>/css/articles.css" rel="stylesheet">
 		<link rel="shortcut icon" href="/favicon.ico">	
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+		
 		
 		<?php if ( is_singular() ) wp_enqueue_script('comment-reply'); ?>
 
